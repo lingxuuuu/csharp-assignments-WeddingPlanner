@@ -69,9 +69,7 @@ namespace WeddingPlanner.Controllers
         {
             if (ModelState.IsValid)
             {
-                //     return View("LoginReg");
-                // }
-
+  
                 // If inital ModelState is valid, query for a user with provided email
                 var foundUser = _context.Users.FirstOrDefault(user => user.Email == userToLogin.LoginEmail);
 
