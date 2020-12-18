@@ -89,6 +89,12 @@ namespace WeddingPlanner.Controllers
                 return Redirect($"/weddings/{weddingToCreate.WeddingId}");
             }
 
+            int? userId = HttpContext.Session.GetInt32("UserId").GetValueOrDefault();
+            
+            ViewBag.User = _context
+                .Users
+                .Find(userId);
+
             return View("NewWeddingPage");
 
         }
