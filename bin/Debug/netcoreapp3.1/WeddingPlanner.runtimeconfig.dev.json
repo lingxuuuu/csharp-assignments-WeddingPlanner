@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\lingx\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lingx\\.nuget\\packages"
+    ]
+  }
+}
